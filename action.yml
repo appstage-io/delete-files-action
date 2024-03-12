@@ -1,0 +1,16 @@
+name: 'Appstage.io - Delete Files'
+author: 'P4 Innovation Ltd'
+description: 'Delete your Appstage.io files in the Live Builds release'
+inputs:
+  token:
+    description: 'Project Access Token'
+    required: true
+  pattern:
+    description: 'File deletion pattern (regex), defaults to ".*"'
+    required: false
+  host:
+    description: 'API host, defaults to https://www.appstage.io'
+    required: false
+runs:
+  using: 'node20'
+  main: 'index.js'
